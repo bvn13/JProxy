@@ -53,8 +53,8 @@ __DEFAULTS:__
 __screenshots__
 
 
-![very simple web UI](https://raw.githubusercontent.com/bvn13/JProxy/msater/img/login-page.png)
+![very simple web UI](https://raw.githubusercontent.com/bvn13/JProxy/master/img/login-page.png)
 
-![very simple web UI](https://raw.githubusercontent.com/bvn13/JProxy/msater/img/first-view.png)
+![very simple web UI](https://raw.githubusercontent.com/bvn13/JProxy/master/img/first-view.png)
 
-![very simple web UI](https://raw.githubusercontent.com/bvn13/JProxy/msater/img/proxy-form.png)
+![very simple web UI](https://raw.githubusercontent.com/bvn13/JProxy/master/img/proxy-form.png)
