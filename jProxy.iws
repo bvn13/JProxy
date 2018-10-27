@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27bd0fac-9043-4d05-8780-09e69fc6f7ca" name="Default Changelist" comment="">
+    <list default="true" id="27bd0fac-9043-4d05-8780-09e69fc6f7ca" name="Default Changelist" comment="implemented web UI for managing multiple proxy servers instances">
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jProxy.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/jProxy.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/login-page.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jProxy.iws" beforeDir="false" afterPath="$PROJECT_DIR$/jProxy.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jproxy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jproxy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/bvn13/JProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/bvn13/JProxyTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +58,7 @@
           <entry key="gitignore" value="10" />
           <entry key="html" value="1354" />
           <entry key="java" value="8539" />
-          <entry key="md" value="491" />
+          <entry key="md" value="751" />
           <entry key="properties" value="211" />
           <entry key="sql" value="29" />
           <entry key="txt" value="66" />
@@ -73,7 +70,7 @@
           <entry key="Git file" value="10" />
           <entry key="HTML" value="1354" />
           <entry key="JAVA" value="8539" />
-          <entry key="Markdown" value="491" />
+          <entry key="Markdown" value="751" />
           <entry key="PLAIN_TEXT" value="91" />
           <entry key="Properties" value="211" />
           <entry key="Scratch" value="29" />
@@ -125,19 +122,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="561">
-                <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <first_editor relative-caret-position="815">
+                <caret line="59" column="94" selection-start-line="59" selection-start-column="94" selection-end-line="59" selection-end-column="94" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/bvn13/JProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="545">
@@ -250,8 +247,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/bvn13/jproxy/services/ProxyManagerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bvn13/jproxy/engine/ProxyServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/ru/bvn13/JProxyTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -316,6 +313,11 @@
             <path>
               <item name="jProxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="jproxy" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jProxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jproxy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,7 +356,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540658323411" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540659030501" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jproxy-temp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/nodejs/node" />
@@ -500,7 +502,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540038559516</updated>
-      <workItem from="1540038565897" duration="42019000" />
+      <workItem from="1540038565897" duration="42724000" />
     </task>
     <task id="LOCAL-00001" summary="implemented web UI for managing multiple proxy servers instances">
       <created>1540656578418</created>
@@ -509,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540656578418</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented web UI for managing multiple proxy servers instances">
+      <created>1540658345170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540658345170</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -545,7 +554,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42019000" />
+    <option name="totallyTimeSpent" value="42724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -979,16 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="561">
-            <caret line="33" selection-start-line="33" selection-end-line="33" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/bvn13/JProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -996,6 +995,16 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="815">
+            <caret line="59" column="94" selection-start-line="59" selection-start-column="94" selection-end-line="59" selection-end-column="94" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
