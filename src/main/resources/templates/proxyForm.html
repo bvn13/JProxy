@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>
+        <th:block th:if="${proxyInstance.id} == 0">New proxy</th:block>
+        <th:block th:if="${proxyInstance.id} == 0" th:text="'Proxy #'+${proxyInstance.id}"></th:block>
+    </title>
+</head>
+<body>
+
+<th:block th:replace="decorators/proxyForm :: proxy-form (proxyId=${proxyInstance.id}, proxyInst=${proxyInstance})"></th:block>
+
+</body>
+</html>

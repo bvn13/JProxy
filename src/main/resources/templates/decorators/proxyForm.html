@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<th:block th:fragment="proxy-form (proxyId, proxyInst)">
+
+    <form action="#" th:action="@{'/proxy/'+${proxyId}}" method="post">
+
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+        <input type="hidden" name="id" th:value="${proxyId}">
+
+        <p>
+            <label th:for="name"><span>Name</span></label>
+            <input type="text" th:name="name" th:value="${proxyInst.name}"/>
+        </p>
+        <p>
+            <label th:for="localHost"><span>Local host</span></label>
+            <input type="text" th:name="localHost" th:value="${proxyInst.localHost}"/>
+        </p>
+        <p>
+            <label th:for="localPort"><span>Local port</span></label>
+            <input type="number" th:name="localPort" th:value="${proxyInst.localPort}"/>
+        </p>
+        <p>
+            <label th:for="remoteHost"><span>Remote host</span></label>
+            <input type="text" th:name="remoteHost" th:value="${proxyInst.remoteHost}"/>
+        </p>
+        <p>
+            <label th:for="remotePort"><span>Remote port</span></label>
+            <input type="number" th:name="remotePort" th:value="${proxyInst.remotePort}"/>
+        </p>
+
+        <button type="submit"><span th:text="${proxyId == 0 ? 'Create' : 'Save'}">Save | Create</span></button>
+
+    </form>
+
+</th:block>
+
+</body>
+</html>

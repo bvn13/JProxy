@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Proxy list</title>
+</head>
+<body>
+
+<table border="1" style="width:300px">
+
+    <tr>
+        <td>Running</td>
+        <td>Enabled</td>
+        <td>Name</td>
+        <td>Local host</td>
+        <td>Local port</td>
+        <td>Remote host</td>
+        <td>Remote port</td>
+        <td>Manage</td>
+    </tr>
+
+    <th:block th:each="proxy : ${@proxyInstanceList.proxyInstances}">
+
+        <tr>
+            <td><span th:text="${@proxyManagerService.isRunnig(proxy.id)}"></span></td>
+            <td>
+                <th:block th:if="${proxy.enabled}">
+                    V
+                </th:block>
+            </td>
+            <td th:text="${proxy.name}">Name</td>
+            <td th:text="${proxy.localHost}">Local host</td>
+            <td th:text="${proxy.localPort}">Local port</td>
+            <td th:text="${proxy.remoteHost}">Remote host</td>
+            <td th:text="${proxy.remotePort}">Remote port</td>
+            <td>
+
+                <a href="#" th:href="@{'/proxy/'+${proxy.id}+'/toggle'}">
+                    <th:block th:if="${proxy.enabled}">
+                        disable
+                    </th:block>
+                    <th:block th:if="not ${proxy.enabled}">
+                        enable
+                    </th:block>
+                </a>
+                &nbsp;
+                <a href="#" th:href="@{'/proxy/'+${proxy.id}}">edit</a>
+            </td>
+        </tr>
+
+    </th:block>
+
+</table>
+
+<p>
+    <a href="#" th:href="@{/proxy/0}">Add proxy</a>
+</p>
+
+</body>
+</html>

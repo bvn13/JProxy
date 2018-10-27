@@ -4,8 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
-import ru.bvn13.jproxy.JProxy;
-import ru.bvn13.jproxy.ProxyServer;
+import ru.bvn13.jproxy.engine.ProxyServer;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -29,11 +28,11 @@ public class JProxyTest
             "Host: yandex.ru\n" +
             "Accept-Language: en-us\n" +
             "Accept-Encoding: gzip, deflate\n" +
-            "Connection: Keep-Alive";
+            "Connection: Keep-Alive\n"+
+            "\n";
 
     @Before
     public void before() {
-        //proxy = new ProxyServer(8099, "yandex.ru", 80);
     }
 
     @Test

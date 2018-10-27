@@ -1,4 +1,4 @@
-package ru.bvn13.jproxy;
+package ru.bvn13.jproxy.engine;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -27,7 +27,7 @@ public class ClientListener implements Runnable {
     private DataOutputStream internalOutStream;
     private DataOutputStream externalOutStream;
 
-    AtomicBoolean isTerminated = new AtomicBoolean(false);
+    private AtomicBoolean isTerminated = new AtomicBoolean(false);
 
     private static class SenderThread implements Runnable {
         private Socket senderSocket;
@@ -38,7 +38,7 @@ public class ClientListener implements Runnable {
         private String name;
         private ClientListener owner;
 
-        public SenderThread(ClientListener owner, String name, Socket senderSocket, Socket receiverSocket, DataInputStream sender, DataOutputStream receiver, int bufferLength) {
+        SenderThread(ClientListener owner, String name, Socket senderSocket, Socket receiverSocket, DataInputStream sender, DataOutputStream receiver, int bufferLength) {
             this.owner = owner;
             this.name = name;
             this.senderSocket = senderSocket;
@@ -123,5 +123,18 @@ public class ClientListener implements Runnable {
 
     private void startExternalToInternalSender() {
         executor.execute(new SenderThread(this,"RECEIVER", externalSocket, internalSocket, externalInStream, internalOutStream, 4096));
+    }
+
+    public void stopIt() {
+        try {
+            externalSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            internalSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
