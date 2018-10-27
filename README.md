@@ -48,7 +48,7 @@ __DEFAULTS:__
 
 - USER: user
 - PASSWORD: pass123
-
+- change it in `/src/main/resources/application.properties`
 
 __screenshots__
 

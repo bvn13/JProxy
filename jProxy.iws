@@ -57,7 +57,7 @@
           <entry key="gitignore" value="10" />
           <entry key="html" value="1354" />
           <entry key="java" value="8539" />
-          <entry key="md" value="752" />
+          <entry key="md" value="809" />
           <entry key="properties" value="211" />
           <entry key="sql" value="29" />
           <entry key="txt" value="80" />
@@ -69,7 +69,7 @@
           <entry key="Git file" value="10" />
           <entry key="HTML" value="1354" />
           <entry key="JAVA" value="8539" />
-          <entry key="Markdown" value="752" />
+          <entry key="Markdown" value="809" />
           <entry key="PLAIN_TEXT" value="105" />
           <entry key="Properties" value="211" />
           <entry key="Scratch" value="29" />
@@ -125,8 +125,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="815">
-                <caret line="59" column="75" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+              <first_editor relative-caret-position="594">
+                <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
               </first_editor>
               <second_editor />
             </state>
@@ -323,6 +323,19 @@
               <item name="jProxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="jproxy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jProxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jproxy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jProxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jproxy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,7 +368,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540659110756" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540659543021" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jproxy-temp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/nodejs/node" />
@@ -501,7 +514,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540038559516</updated>
-      <workItem from="1540038565897" duration="42804000" />
+      <workItem from="1540038565897" duration="43236000" />
     </task>
     <task id="LOCAL-00001" summary="implemented web UI for managing multiple proxy servers instances">
       <created>1540656578418</created>
@@ -524,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540659060182</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added readme">
+      <created>1540659115971</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540659115972</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -560,7 +580,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42804000" />
+    <option name="totallyTimeSpent" value="43236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1008,8 +1028,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="815">
-            <caret line="59" column="75" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+          <first_editor relative-caret-position="594">
+            <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           </first_editor>
           <second_editor />
         </state>
